@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-assembli - MATHIAS TANG</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <div id="head-menu">
+        <div class="menu-container">
+          <!-- Main menu -->
+          <div id="head-menu1">
+            <table class="head-menu-table">
+              <tr>
+                <td><a class="head-link" href="index.html">MATHIAS TANG</a></td>
+                <td><a class="head-link" href="index.html#info">Info</a></td>
+                <td><a class="head-link" href="index.html#work" onclick="showProjects()">Works</a></td>
+                <td><a class="head-link" href="index.html#exhibitions">Exhibitions</a></td>
+                <td><a class="head-link" href="index.html#performances">Performances</a></td>
+                <td><a class="head-link" href="index.html#biography">Biography</a></td>
+                <td><a class="head-link" href="index.html#contact">Contact</a></td>
+              </tr>
+            </table>
+          </div>
+          
+          <!-- Border line -->
+          <div id="head-menu-border"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="project-header">
+            </div>
+            
+            <div class="project-content">
+                <div class="project-images">
+                    <img src="images/1234.jpg" alt="re-assembli installation - natural landscape formation">
+                    <img src="images/12345.jpg" alt="re-assembli installation - natural landscape formation">
+                    <!-- Additional project images can be added here -->
+                </div>
+                
+                <div class="project-description">
+                    <p class="project-title">re-assembli</p>
+                    <p class="project-year">2022</p>
+                    <p class="project-type">Installation</p>
+
+                    <p>re-assembli is an installation that investigates the reconstruction of natural forms through artificial means. The work presents a series of landscape-like formations that have been meticulously crafted to mimic organic structures while simultaneously revealing their constructed nature.</p>
+                    
+                    <p>Through this tension between the natural and the artificial, re-assembli questions our understanding of authenticity and challenges conventional notions of representation in contemporary art.</p>
+                    
+                    <h2>Exhibition History</h2>
+                    <ul>
+                        <li>Museum of Modern Art, Stockholm, Sweden (2023)</li>
+                        <li>Contemporary Arts Center, Cincinnati, OH (2022)</li>
+                    </ul>
+                    
+                    <h2>Materials</h2>
+                    <p>Found objects, clay, resin, digital projections</p>
+                    
+                    <h2>Dimensions</h2>
+                    <p>Variable, installation approximately 5m × 8m × 3m</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        function showProjects() {
+            // This function is not needed on the project page but kept for consistency
+            console.log("Projects menu clicked");
+        }
+    </script>
+</body>
+</html> 
