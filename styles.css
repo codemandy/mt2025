@@ -9,7 +9,7 @@ body {
   font-family: 'Eurostile', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 700;
   line-height: 1.6;
-  color: #333;
+  color: white;
   max-width: 850px;
   margin: 0 auto;
   padding: 20px;
@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: black;
 }
 
 /* Header styles */
@@ -25,7 +26,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: black;
   z-index: 100;
   padding: 20px;
   max-width: 850px;
@@ -41,7 +42,7 @@ header {
 .name h1 {
   font-family: 'Eurostile Extended', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 9px;
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   text-align: left;
@@ -66,7 +67,7 @@ header {
 .head-menu-table td {
   padding: 5px 15px;
   white-space: nowrap;
-  border-right: 1px solid #ddd;
+  border-right: 0.5px solid #ddd;
   text-align: center;
 }
 
@@ -77,7 +78,7 @@ header {
 .head-link {
   font-family: 'Eurostile', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-decoration: none;
-  color: #333;
+  color: white;
   font-size: 10px;
   font-weight: 400;
 }
@@ -103,8 +104,8 @@ header {
 }
 
 #head-menu-border {
-  height: 1px;
-  background-color: #ddd;
+  height: 0.5px;
+  background-color: white;
   width: 100%;
   margin-top: 5px;
 }
@@ -128,8 +129,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 70px;
 }
 
 .work-section-title {
@@ -190,6 +190,14 @@ nav {
   display: block;
 }
 
+.about-me {
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   header {
@@ -242,7 +250,7 @@ nav {
 }
 
 .project-year, .project-type {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -275,7 +283,7 @@ nav {
 }
 
 .project-description {
-  font-size: 10px;
+  font-size: 9px;
   line-height: 1.6;
 }
 
@@ -284,7 +292,7 @@ nav {
 }
 
 .project-description h2 {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   margin: 30px 0 10px 0;
 }
@@ -323,7 +331,7 @@ main {
 
 /* Update project title and details to have font-weight 700 */
 .project-title {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -358,4 +366,21 @@ main {
   text-align: center;
   margin-top: 40px;
   font-size: 10px;
+}
+
+/* Ensure all text elements have white color */
+h1, h2, h3, h4, h5, h6, p, span, a, li, dt, dd, th, td {
+  color: white;
+}
+
+/* Set borders and lines to white */
+hr, .border, table, th, td {
+  border-color: white;
+}
+
+/* Example for specific elements */
+.header, .footer, .content {
+  background-color: black;
+  color: white;
+  border-color: white;
 }
